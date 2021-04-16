@@ -1,2 +1,2 @@
 # Ancient_Texts_LDA
-Did a Latent Dirichlet Allocation on Ancient Text to find a origin which is debated and has not been found yet.
+Did a Latent Dirichlet Allocation on very ancient texts and scriptures of find more connected literature links in history as literature connects various civilization.
