@@ -1,2 +1,5 @@
-# Ancient_Texts_LDA
-Did a Latent Dirichlet Allocation on very ancient texts and scriptures of find more connected literature links in history as literature connects various civilization.
+# Indo-European language family analysis using NLP techniques
+
+Discovering insights between ancient Indo-European languages by applying NLP techniques to the early Indo-European classics. Developed python-based web-scraping tools to extract and structure text corpora from Indo-European ancient texts
+
+The Aim is to discover the order in which these languages evolved, also analyzing and reconstructing the Proto-Indo-European language
