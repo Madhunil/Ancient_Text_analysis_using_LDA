@@ -8,5 +8,5 @@ recent_files = ['text_scrapper.py']
 
 [main]
 version = 0.2.0
-recent_files = ['C:\\Users\\madpa\\.spyder-py3\\temp.py', 'text_scrapper.py']
+recent_files = ['tokenizer.py', '..\\..\\CS 6120\\Homework\\HW 4\\wordembeddings_spyder.py']
 
