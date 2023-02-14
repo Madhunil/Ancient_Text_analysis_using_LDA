@@ -1,2 +1,4 @@
 public_html/
 package_installers/
+.DS_Store
+.idea/
