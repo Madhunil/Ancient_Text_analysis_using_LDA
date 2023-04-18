@@ -2,7 +2,7 @@
 """
 Created on Thu Nov  4 04:50:32 2021
 
-@title: Tokenizer for Rigved and other texts
+@title: Tokenizer component for Rigved and other Indo European classics
 
 @author: Madhunil Pachghare
 """

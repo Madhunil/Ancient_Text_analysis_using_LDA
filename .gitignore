@@ -2,3 +2,5 @@ public_html/
 package_installers/
 .DS_Store
 .idea/
+.spyproject/
+.ipynb_checkpoints/

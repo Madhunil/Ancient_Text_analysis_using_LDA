@@ -6,12 +6,11 @@ import random
 
 
 """
-Name : Madhunil Anil Pachghare
+A Language Model to generate random words after training on various ancient Indo-European classics.
 
-Build a class to generate random words after training on various ancient Indo-European texts.
+This LM class will be used to produce numerous sentences using various ancient texts and different n-grams to see patterns in sentence generation after training on various Indo-European languages.
 
-This class will be used to produce numerous sentences using various ancient texts and different n-grams to see patterns in sentence generation after training on various Indo-European languages.
-
+@author: Madhunil Pachghare
 """
 
 
