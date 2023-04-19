@@ -51,8 +51,12 @@ def scrape_p_1_v1(url):
     requests_session.mount('file://', LocalFileAdapter())
     page = requests_session.get(url)
     soup = BeautifulSoup(page.content, "html.parser")
-    text = soup.find_all('p')[1].prettify()
-    my_list = [i.replace('<br>', '').replace('<br/>', '').replace('<p>', '').replace('</p>', '') for i in text.split()]
+    #text = soup.find_all('p')[1].prettify()
+    text = soup.find_all('p')
+    text = [p.prettify() for p in text]
+    text = text[1:-1]
+    str_text = ' '.join(text)
+    my_list = [i.replace('<br>', '').replace('<br/>', '').replace('<p>', '').replace('</p>', '') for i in str_text.split()]
     return ' '.join(my_list)
 
 #%%
@@ -63,14 +67,21 @@ def get_text_in_list_format(urls):
         all_text.append(scrape_p_1_v1(url))
     return all_text
 
-#%%
+#%% Run this cell to generate the greek classic text the iliad by homer
 links_1st = get_links('file://C:/Users/madpa/Indo-European-language-family-analysis-using-NLP-techniques/dataset/public_html/cla/homer/ili/ili0',1,9)
 links_2nd = get_links('file://C:/Users/madpa/Indo-European-language-family-analysis-using-NLP-techniques/dataset/public_html/cla/homer/ili/ili',10,24)
 
 links_for_book1 = links_1st + links_2nd
 
-#%%
+
 iliad_full = get_text_in_list_format(links_for_book1)
+
+
+iliad_full_book = ' '.join(iliad_full)
+
+
+with open("iliad_full_book.txt", "w") as file:
+    file.write(iliad_full_book)
 
 #%%
 ili_link = 'file://C:/Users/madpa/Indo-European-language-family-analysis-using-NLP-techniques/dataset/public_html/cla/homer/ili/ili01.htm'
@@ -83,14 +94,20 @@ requests_session_exp.mount('file://', LocalFileAdapter())
 page_ili = requests_session_exp.get(ili_link)
 soup_ili = BeautifulSoup(page_ili.content, "html.parser")
 
+#%%
 text_ili = soup_ili.find_all('p')[1].prettify()
 text2_ili = soup_ili.get_text()
 
+#%%
 text3_ili = soup_ili.find_all('p')
 text3_ili = [p.prettify() for p in text3_ili]
+text3_ili = text3_ili[1:-1]
 
 #%%
-ili_list = [i.replace('<br>', '').replace('<br/>', '').replace('<p>', '').replace('</p>', '') for i in text_ili.split()]
+str_ili = ' '.join(text3_ili)
+
+#%%
+ili_list = [i.replace('<br>', '').replace('<br/>', '').replace('<p>', '').replace('</p>', '') for i in text3_ili.split()]
 ili_list = ' '.join(ili_list)
 
 
@@ -100,12 +117,15 @@ rigveda_link = 'file://C:/Users/madpa/Indo-European-language-family-analysis-usi
 #%%
 page_rigveda = requests_session_exp.get(rigveda_link)
 soup_rigveda = BeautifulSoup(page_rigveda.content, "html.parser")
+
+#%%
 text_rigveda = soup_rigveda.find_all('p')[1].prettify()
 
 text2_rigveda = soup_rigveda.get_text()
-
+#%%
 text3_rigveda = soup_rigveda.find_all('p')
 text3_rigveda = [p.prettify() for p in text3_rigveda]
+text3_rigveda = text3_rigveda[1:-1]
 
 #%%
 rv_list = [i.replace('<br>', '').replace('<br/>', '').replace('<p>', '').replace('</p>', '') for i in text_rigveda.split()]
