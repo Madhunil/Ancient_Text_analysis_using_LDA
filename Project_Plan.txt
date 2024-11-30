@@ -1,0 +1,28 @@
+# Indo-European language family analysis using NLP techniques
+
+This project aims on discovering insights between ancient Indo-European languages by applying NLP techniques to the early Indo-European classics. For this I developed python-based web-scraping tools to extract and structure text corpora from ancient Indo-European text data.
+
+The aim is to discover the order in which these languages evolved, and eventually analyzing and reconstructing the Proto-Indo-European (PIE) language using the power of generative AI.
+
+Indo-European ancient text data source : https://www.sacred-texts.com/time/timeline.htm
+
+## Introduction
+
+The Indo-European language family is one of the most widely spoken and studied language families in the world. It includes languages such as English, Spanish, Hindi, Russian, Greek, Latin, Persian, and many more. These languages share a common ancestor, the Proto-Indo-European (PIE) language, which is estimated to have been spoken around 4500-2500 BCE.
+
+However, the PIE language is not directly attested by any written records. It is reconstructed by comparing the similarities and differences among its descendants, using methods such as comparative linguistics and historical linguistics. These methods rely on identifying regular patterns of sound changes and grammatical changes that occurred over time in different branches of the Indo-European family.
+
+One of the challenges of reconstructing PIE is that there is a limited amount of data available for some of the ancient Indo-European languages, especially those that were spoken before the invention of writing or before the spread of literacy. Some of these languages are only known from a few inscriptions or fragments of texts, such as Hittite, Tocharian, or Linear B. Others are only preserved in oral traditions or later translations, such as Vedic Sanskrit, Old Norse, or Celtic.
+
+Therefore, it would be useful to have more data sources for these ancient languages, as well as more efficient and automated ways of analyzing them. This is where natural language processing (NLP) techniques can help. NLP is a branch of computer science and artificial intelligence that deals with analyzing and generating natural language data. NLP can be used to perform tasks such as text mining, sentiment analysis, machine translation, text summarization, speech recognition, and more.
+
+In this project, I will use NLP techniques to analyze the early Indo-European classics, which are some of the oldest and most influential texts written in various Indo-European languages. These texts include the Rigveda (Vedic Sanskrit), the Iliad and the Odyssey (Ancient Greek), the Avesta (Old Persian), the Edda (Old Norse), and others. These texts contain valuable information about the culture, history, mythology, religion, and literature of the ancient Indo-European peoples.
+
+By applying NLP techniques to these texts, I hope to achieve the following goals:
+
+- Extract and structure text corpora from ancient Indo-European text data using python-based web-scraping tools.
+- Compare and contrast the vocabulary, grammar, syntax, and semantics of different ancient Indo-European languages using NLP tools such as word embeddings, part-of-speech tagging, dependency parsing, named entity recognition, etc.
+- Identify and visualize the linguistic similarities and differences among different ancient Indo-European languages using NLP tools such as clustering, classification, topic modeling, etc.
+- Infer and reconstruct some aspects of the PIE language using NLP tools such as neural machine translation, neural text generation, etc.
+
+In this blog post, I will describe the steps I followed to complete this project, as well as some of the results and insights I obtained. I will also share the code and data I used for this project on GitHub.

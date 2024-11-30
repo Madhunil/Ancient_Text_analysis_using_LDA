@@ -83,6 +83,25 @@ iliad_full_book = ' '.join(iliad_full)
 with open("iliad_full_book.txt", "w") as file:
     file.write(iliad_full_book)
 
+
+
+#%% Run this cell to generate the indic classic text the rigved
+#https://www.sacred-texts.com/hin/rvsan/rv01001.htm
+links_1st = get_links('file://C:/Users/madpa/Indo-European-language-family-analysis-using-NLP-techniques/dataset/public_html/rvsan/rv01001',1,101)
+#links_2nd = get_links('file://C:/Users/madpa/Indo-European-language-family-analysis-using-NLP-techniques/dataset/public_html/rvsan/homer/ili/ili',10,24)
+
+links_for_book1 = links_1st
+
+
+rvsan_full = get_text_in_list_format(links_for_book1)
+
+
+rvsan_full_book = ' '.join(rvsan_full)
+
+
+with open("rvsan_full_book.txt", "w") as file:
+    file.write(rvsan_full_book)
+
 #%%
 ili_link = 'file://C:/Users/madpa/Indo-European-language-family-analysis-using-NLP-techniques/dataset/public_html/cla/homer/ili/ili01.htm'
 
@@ -130,3 +149,5 @@ text3_rigveda = text3_rigveda[1:-1]
 #%%
 rv_list = [i.replace('<br>', '').replace('<br/>', '').replace('<p>', '').replace('</p>', '') for i in text_rigveda.split()]
 rv_list = ' '.join(rv_list)
+
+ 

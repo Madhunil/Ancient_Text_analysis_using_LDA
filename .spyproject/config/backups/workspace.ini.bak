@@ -8,5 +8,5 @@ recent_files = ['text_scrapper.py']
 
 [main]
 version = 0.2.0
-recent_files = ['..\\.spyder-py3\\temp.py']
+recent_files = ['components\\generalized_scrapper.py']
 
